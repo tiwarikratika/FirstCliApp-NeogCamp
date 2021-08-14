@@ -12,28 +12,28 @@ console.log(chalk.green("okayy !! So let's get started !!"));
 
 
 var questions = [{
-  question : "What is my age?",
+  question : "1.What is my age?",
   answer : "21"
 },
 
 {
-  question: "Where am I from ?",
+  question: "2.Where am I from ?",
   answer : "hardoi"
 },
 {
-  question : "What is my favourite color ?",
+  question : "3.What is my favourite color ?",
   answer : "yellow"
 },
 {
-  question: "What do I love? Mountains or Beaches ??",
+  question: "4.What do I love? Mountains or Beaches ??",
   answer : "Mountains"
 },
 {
- question:"What is my preference ? Coffee or Tea ?",
+ question:"5.What is my preference ? Coffee or Tea ?",
  answer : "Tea"
 },
 {
-question: "Do i have a pet ?",
+question: "6.Do i have a pet ?",
 answer : "no"
 }];
 
@@ -50,7 +50,7 @@ function play(question,ans){
      score-=1;
    }
 }
-high_score=4;
+var high_score=3;
 for(var i=0;i<questions.length;i++)
 {
   var currques = questions[i];
@@ -63,7 +63,7 @@ console.log("Your final score is ", score);
 
 
 
-if(score>highest_score)
+if(score>high_score)
   {console.log(chalk.green(" Congratulations!!  You have the highest score! You really know me well"))
   }
   else{console.log(chalk.red("The highest score is: ", high_score));
